@@ -54,11 +54,11 @@ public class Mahasiswa extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         tbl_data = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
+        lbl_nama = new javax.swing.JLabel();
         t_Nama = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        lbl_Telepon = new javax.swing.JLabel();
         t_telepon = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        lbl_Alamat = new javax.swing.JLabel();
         t_Alamat = new javax.swing.JTextField();
         t_cari = new javax.swing.JTextField();
         but_tambah = new javax.swing.JButton();
@@ -85,11 +85,17 @@ public class Mahasiswa extends javax.swing.JFrame {
         tbl_data.setRowHeight(30);
         jScrollPane1.setViewportView(tbl_data);
 
-        jLabel1.setText("Nama");
+        lbl_nama.setText("Nama");
 
-        jLabel2.setText("Telepon");
+        t_Nama.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                t_NamaActionPerformed(evt);
+            }
+        });
 
-        jLabel3.setText("Alamat ");
+        lbl_Telepon.setText("Telepon");
+
+        lbl_Alamat.setText("Alamat ");
 
         t_cari.setText("Pencarian");
         t_cari.addActionListener(new java.awt.event.ActionListener() {
@@ -123,9 +129,9 @@ public class Mahasiswa extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lbl_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbl_Telepon, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbl_Alamat, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(but_tambah)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -147,15 +153,15 @@ public class Mahasiswa extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(lbl_nama)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(t_Nama, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel2)
+                        .addComponent(lbl_Telepon)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(t_telepon, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
+                        .addComponent(lbl_Alamat)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(t_Alamat, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -203,6 +209,10 @@ public class Mahasiswa extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_but_tambahActionPerformed
 
+    private void t_NamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t_NamaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_t_NamaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -243,10 +253,10 @@ public class Mahasiswa extends javax.swing.JFrame {
     private javax.swing.JButton but_hapus;
     private javax.swing.JButton but_perbarui;
     private javax.swing.JButton but_tambah;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lbl_Alamat;
+    private javax.swing.JLabel lbl_Telepon;
+    private javax.swing.JLabel lbl_nama;
     private javax.swing.JTextField t_Alamat;
     private javax.swing.JTextField t_Nama;
     private javax.swing.JTextField t_cari;
